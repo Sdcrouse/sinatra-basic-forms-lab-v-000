@@ -11,6 +11,7 @@ class App < Sinatra::Base
   end
   
   post "/puppy" do 
+    @name, @breed, @age = nil, nil, nil
     erb :display_puppy
   end
 
