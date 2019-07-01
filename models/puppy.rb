@@ -1,5 +1,7 @@
 class Puppy
   attr_accessor :name, :breed, :months_old
+  alias_method :age, :months_old
+  alias_method :age=, :months_old=
   
   def initialize(puppy_attributes)
     puppy_attributes.each do |key, value|
