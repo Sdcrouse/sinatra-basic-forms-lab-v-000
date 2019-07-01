@@ -3,7 +3,7 @@ class Puppy
   alias_method :age, :months_old
   alias_method :age=, :months_old=
   # alias_method :new_method_name, :original_method_name
-  # Nice to know that you can do this! It makes the "post '/"
+  # Nice to know that you can do this! It makes the "post '/puppy'" controller action easier to write.
   
   def initialize(puppy_attributes)
     puppy_attributes.each do |key, value|
